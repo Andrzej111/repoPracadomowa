@@ -7,7 +7,7 @@ public class Main {
         String key = "";
         String keySure = "n";
         Library library = Library.getInstanceLibrary();
-        LibraryFileResolver libraryFileResolver = new LibraryFileResolver("src//main//java//storage//");
+        LibraryFileResolver libraryFileResolver = new LibraryFileResolver(Constatnts.pathStorage);
         libraryFileResolver.readFile(Constatnts.filName, library.getLibrary());
         while (!(key.equals("0") && (keySure.equals("t")))) {
             System.out.println("Menu:");
